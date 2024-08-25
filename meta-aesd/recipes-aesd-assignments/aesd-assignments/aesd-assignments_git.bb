@@ -19,7 +19,7 @@ S = "${WORKDIR}/git/server"
 # TODO: Add the aesdsocket application and any other files you need to install
 # See https://git.yoctoproject.org/poky/plain/meta/conf/bitbake.conf?h=kirkstone
 FILES:${PN} += "${bindir}/aesdsocket"
-INITSCRIPT_PACKAGES = "${PN}”"
+INITSCRIPT_PACKAGES = "${PN}"
 INITSCRIPT_NAME = "aesdsocket-start-stop"
 # TODO: customize these as necessary for any libraries you need for your application
 # (and remove comment)
