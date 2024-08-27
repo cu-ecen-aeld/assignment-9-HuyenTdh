@@ -1,0 +1,19 @@
+#!/bin/sh
+case "$1" in
+    start)
+        echo "Start S98lddmodules"
+        /bin/scull_load
+        /bin/module_load faulty
+        modprobe hello
+        ;;
+    stop)
+        echo "Stop S98lddmodules"
+        /bin/scull_unload
+        /bin/module_unload faulty
+        rmmod hello
+        ;;
+    *)
+        echo "Usage: $0 {start|stop}"
+    exit 1
+esac
+exit 0
