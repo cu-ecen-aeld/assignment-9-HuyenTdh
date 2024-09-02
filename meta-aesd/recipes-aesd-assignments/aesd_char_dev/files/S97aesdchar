@@ -1,0 +1,15 @@
+#!/bin/sh
+case "$1" in
+    start)
+        echo "insmod aesd driver"
+        /bin/aesdchar_load
+        ;;
+    stop)
+        echo  "rmmod aesd driver"
+        /bin/aesdchar_unload
+        ;;
+    *)
+        echo "Usage: $0 (start|stop)"
+    exit 1
+esac
+exit 0
