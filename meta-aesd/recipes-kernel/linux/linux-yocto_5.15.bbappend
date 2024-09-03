@@ -1,2 +1,2 @@
 FILESEXTRAPATHS:prepend := "${THISDIR}/test:"
-SRC_URI += "file://remove-md-faulty-config.cfg"
+SRC_URI += "file://remove-md-faulty-config.cfg file://fragment.cfg"
